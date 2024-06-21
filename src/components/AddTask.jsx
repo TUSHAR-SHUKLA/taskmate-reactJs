@@ -11,8 +11,7 @@ export const AddTask = ({ tasklist, setTasklist, task, setTask }) => {
       setTask({})
     }else{
     const date = new Date();
-    // console.log(event.target.task.value);
-    // console.log(date);
+    
     const newTask = {
       id:date.getTime(), 
       name:event.target.task.value, 
